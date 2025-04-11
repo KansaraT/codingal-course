@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <style>
         div {
             width: 300px;
-            height: 100px;
-            background-color: yellow;
-            border: 1px solid black;
+            height: 200px;
+            background-color: rgb(110, 155, 47);
+            border: 2px solid yellow; /*solid*/
         }
-
-        @keyframes rotateAnimation {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
 
         #myDiv {
-        animation: rotateAnimation 0.5s linear infinite; /* Rotates continuously */
+        transform: rotate(180deg); /*rotateX*/
       }
     </style>
 </head>
@@ -30,9 +20,9 @@
     <div>
         Codingal
     </div>
+
     <div id="myDiv">
         Codingal
     </div>
 </body>
-
 </html>

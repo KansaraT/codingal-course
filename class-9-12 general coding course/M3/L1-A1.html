@@ -1,18 +1,13 @@
-<!--1. Bootstrap is a popular front-end framework for building websites.
-2. It includes predefined CSS classes and JavaScript components for layout, typography, buttons, forms, modals, carousels, etc.
-3. It saves time because developers don't need to write CSS from scratch.
-4. Bootstrapping involves linking Bootstrap CSS and JS files in an HTML document.-->
+<!-- What is Bootstrap?
+- Bootstrap is a free and open-source CSS framework that helps developers design websites quickly without writing a lot of custom CSS and JavaScript.
+- It comes with ready-made styles, layouts, and components like buttons, grids, forms, and navigation bars.
+- Bootstrap makes websites responsive, meaning they adjust to different screen sizes (desktop, tablet, mobile).
 
-<!--1️⃣ What is Bootstrap?
-🔹 Bootstrap is a free and open-source CSS framework that helps developers design websites quickly without writing a lot of custom CSS and JavaScript.
-🔹 It comes with ready-made styles, layouts, and components like buttons, grids, forms, and navigation bars.
-🔹 Bootstrap makes websites responsive, meaning they adjust to different screen sizes (desktop, tablet, mobile).
-
-2️⃣ Why Use Bootstrap?
-✅ Saves Time – You don’t have to write a lot of CSS from scratch.
-✅ Responsive Design – Websites automatically fit on different devices.
-✅ Pre-Styled Components – Includes ready-to-use buttons, cards, modals, etc.
-✅ Easy to Use – Just add Bootstrap classes to your HTML elements.
+Why Use Bootstrap?
+1. Saves Time – You don’t have to write a lot of CSS from scratch.
+2. Responsive Design – Websites automatically fit on different devices.
+3. Pre-Styled Components – Includes ready-to-use buttons, cards, modals, etc.
+4. Easy to Use – Just add Bootstrap classes to your HTML elements.
 -->
 
 <!DOCTYPE html>
@@ -22,20 +17,14 @@
     <title>Bootstrap Grid System</title>
     <meta charset="utf-8"> <!-- It is the most widely used encoding because it supports characters from almost all languages-->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Makes the webpage responsive for mobile devices.-->
-    <!--Without this tag, websites may appear zoomed out or improperly sized on small screens.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Makes the webpage responsive for mobile devices. Without this tag, websites may appear zoomed out or improperly sized on small screens.-->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!--This loads Bootstrap’s CSS framework.
-    Why use Bootstrap?
-    1. Provides pre-built styles for layouts, buttons, tables, forms, etc.
-    2. Makes designing responsive websites easier.-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--This loads Bootstrap’s CSS framework.-->
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
     </script>
-    <!--Loads Bootstrap's JavaScript file.
-    Why is this needed?
-    1. Bootstrap has interactive components like modals, dropdowns, carousels, tooltips, etc., that require JavaScript to function.-->
+    <!--Loads Bootstrap's JavaScript file.-->
 
     <style>
         .col {
@@ -49,6 +38,10 @@
 <body>
     <h3>Equal width column grid</h3>
     <div class="container">
+        <!--class="container" is a Bootstrap class that:
+        1. Centers the content horizontally.
+        2. Adds padding around the content.
+        3. Makes the layout responsive.-->
         <div class="row">
             <div class="col">
                 column 1
@@ -66,7 +59,3 @@
 </html>
 
 
-<!--class="container" is a Bootstrap class that:
-1. Centers the content horizontally.
-2. Adds padding around the content.
-3. Makes the layout responsive.-->

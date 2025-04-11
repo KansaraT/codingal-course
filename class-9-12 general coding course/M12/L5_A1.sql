@@ -120,3 +120,4 @@ SELECT *
 FROM Customer
 JOIN Orders ON Customer.customer_id = Orders.customer_id
 WHERE Orders.ord_date = '2012-10-05';
+
