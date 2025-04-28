@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
     </script>
     <style>
@@ -34,20 +34,40 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    
+<!--data-spy="scroll" → Tells the browser:
+“Hey, watch the scroll!”
+
+data-target=".navbar" →
+“As the user scrolls, keep an eye on this .navbar and highlight the link for the section they’re on.”
+
+data-offset="50" →
+“Wait until the section is 50 pixels down from the top before highlighting its link.”
+-->
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!--navbar: Makes it a Bootstrap navbar.
+        navbar-inverse: Makes the background dark and text light.navbar-fixed-top: Keeps it fixed at the top, even when you scroll.-->
         <div class="container-fluid">
             <div class="navbar-header">
+                <!--This section holds the brand name and the toggle (hamburger) button for small screens.-->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <!--This is the hamburger button
+                    type="button" → It’s a clickable button.
+                    class="navbar-toggle" → Bootstrap style for the hamburger.data-toggle="collapse" → Tells Bootstrap: “This button will open or close something.”
+                    -->
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <!--These 3 lines create the three horizontal bars of the hamburger-->
                 </button>
                 <a class="navbar-brand" href="#">Codingal</a>
+                <!--This is the brand name or logo shown on the top bar (navbar)-->
             </div>
             <div>
                 <div class="collapse navbar-collapse" id="myNavbar">
+                    <!--Can collapse or expand (hide/show) — useful for small screens like mobile.-->
                     <ul class="nav navbar-nav">
+                        <!--This is an unordered list (bulleted list, but styled as a navbar) that holds the navigation links.-->
                         <li><a href="#section1">Section 1</a></li>
                         <li><a href="#section2">Section 2</a></li>
                     </ul>
@@ -80,10 +100,3 @@
 </body>
 
 </html>
-
-
-<!--
-<nav>: Represents a navigation section.
-navbar: Base Bootstrap class to style the navigation bar.
-navbar-inverse: Makes the navbar dark-themed (white text, dark background).
-navbar-fixed-top: Fixes the navbar to the top of the screen — it always stays visible.-->
