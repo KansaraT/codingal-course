@@ -1,5 +1,6 @@
 function validate(e) {
     e.preventDefault();
+    //Prevents the default behavior of the form submission (which is to reload the page). This allows custom validation to occur before deciding whether to submit the form.
 
     const email = document.getElementById('email').value;
     const pass = document.getElementById('password').value;
@@ -25,6 +26,7 @@ function validate(e) {
     }
 
     msgBox.innerText = message;
+    //Displays the message (error or success) inside the message box element.
 }
 
 
